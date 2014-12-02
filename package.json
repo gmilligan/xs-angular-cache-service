@@ -1,0 +1,35 @@
+{
+  "name": "xs-angular-cache-service",
+  "version": "1.0.0",
+  "description": "Angular cache service. Enables persisting data and state across modules or sessions in an app.",
+  "main": "xs-angular-cache-service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xybersolve/xs-angular-cache-service.git"
+  },
+  "keywords": [
+    "Angular",
+    "Cache",
+    "Service",
+    "LocalStorage",
+    "cacheFactory"
+  ],
+  "author": "Greg Milligan (xybersolve@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xybersolve/xs-angular-cache-service/issues"
+  },
+  "homepage": "https://github.com/xybersolve/xs-angular-cache-service",
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "jshint-stylish": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "karma-cli": "0.0.4"
+  }
+}
