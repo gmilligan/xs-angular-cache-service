@@ -1,35 +1,49 @@
 {
   "name": "xs-angular-cache-service",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "Angular cache service. Enables persisting of data and state across modules and/or sessions.",
-  "main": "xs-angular-cache-service.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "./src/xs-angular-cache-service.js",
+  "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/gmilligan/xs-angular-cache-service.git"
   },
   "keywords": [
     "Angular",
-    "Cache",
-    "Service",
-    "LocalStorage",
+    "cache",
+    "localStorage",
     "$cacheFactory"
   ],
-  "author": "Greg Milligan (xybersolve@gmail.com)",
+  "author": {
+    "name": "Greg Milligan",
+    "email": "xybersolve@gmail.com",
+    "url": "xybersolve.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gmilligan/xs-angular-cache-service/issues"
   },
   "homepage": "https://github.com/gmilligan/xs-angular-cache-service",
   "devDependencies": {
-    "grunt-cli": "^0.1.13",
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-uglify": "^0.6.0",
-    "jshint-stylish": "^1.0.0",
-    "grunt-contrib-clean": "^0.6.0",
-    "karma-cli": "0.0.4"
+    "grunt-cli": "0.1.13",
+    "load-grunt-tasks": "^1.0.0",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-contrib-uglify": "0.6.0",
+    "grunt-karma": "^0.9.0",
+    "jshint-stylish": "1.0.0",
+    "karma": "^0.12.31",
+    "karma-cli": "0.0.4",
+    "karma-jasmine": "0.1.5",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "phantomjs": "^1.9.12",
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "test": "karma start ./karma.conf.js",
+    "postinstall": "bower install",
+    "build": "grunt build"
   }
 }

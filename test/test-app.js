@@ -3,7 +3,7 @@
   App module creates separate cache services to enable discrete testing across modules.
 
 */
-(function (window, angular) {  'use strict';
+(function (window, angular, undefined) {  'use strict';
 
   angular
     .module('test', ['xs.cache'])
